@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge =19
+if (votingAge>=18){
+  console.log('true')
+}
 
 
 /*
@@ -30,7 +33,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let var1=5
+let var2=6
+if (var2>var1){
+  var1=7
+console.log(var1)
+}
 
 
 
@@ -45,6 +53,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+let number='1999'
+Number(number);
+console.log(number)
+
 
 
 
@@ -58,10 +70,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+     return a*b;
   }
-
+  console.log(multiply(3,4))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -133,9 +145,29 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
+if(computer<= 0.34){
+computer= 'rock';
+}else if(computer<=0.67){
+  computer='paper';
+}else if(computer>0.67){
+  computer='scissors';
+}
+console.log(computer)
 
 function game(user, computer){
-    /*add your code here*/
+    if(user===computer){
+      return `it's a tie`;
+    }else if(user==='rock' && computer==='scissors'){
+      return `you win!`;
+    }else if(user=== 'paper' && computer==='rock'){
+      return `you win!`;
+    }else if(user=== 'scissors' && computer=== 'paper'){
+      return `you win!`;
+    }else{
+      return `you lose!`;
+    }
+
 }
   
   
